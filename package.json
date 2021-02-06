@@ -1,0 +1,19 @@
+{
+  "name": "webpack-worker-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:node-10": "NODE_OPTIONS=--experimental-worker webpack",
+    "start": "node ./dist/index.js",
+    "start:worker": "node ./dist/worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
